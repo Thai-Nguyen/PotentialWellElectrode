@@ -26,8 +26,7 @@ if __name__ == '__main__':
                 V[121:122, 1:122] = 0
                 V[1:121, 101:102] = 0
                 # Traverse mesh and update
-                V[i, j] = (V[i + 1, j] + V[i - 1, j] + V[i, j + 1] + V[
-                    i, j - 1]) / 4
+                V[i, j] = (V[i+1, j] + V[i-1, j] + V[i, j+1] + V[i, j-1]) / 4
         print('Iteration:', iter)
 
     V = np.transpose(V)
